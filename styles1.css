@@ -1,0 +1,296 @@
+/* CSS Синтаксис */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* Горизонтальна лінія */
+hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+/* CSS Селектори */
+h1 {
+    color: blue;
+}
+
+/* CSS Кольори */
+.color-example {
+    background-color: #ff0000; /* HEX */
+    color: rgb(0, 255, 0); /* RGB */
+    border: 2px solid hsl(240, 100%, 50%); /* HSL */
+    padding: 10px;
+    margin: 10px;
+}
+
+/* CSS Фони */
+.background-example {
+    background-image: url('media/background.png');
+    background-size: cover;
+    height: 200px;
+    width: 300px;
+    border: 1px solid black;
+}
+
+/* CSS Межі */
+.border-example {
+    border: 2px solid #000;
+    padding: 10px;
+    width: 200px;
+}
+
+/* CSS Поля */
+.padding-example {
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+/* CSS Padding - Внутрішній відступ */
+
+/* CSS Висота, ширина і максимальна ширина */
+.size-example {
+    width: 100px;
+    height: 100px;
+    max-width: 200px;
+    background-color: #ccc;
+}
+
+/* CSS Блочна модель */
+.box-model-example {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+}
+
+/* CSS Іконки */
+.icon-example {
+
+    width: 50px;
+    height: 50px;
+}
+
+/* CSS Посилання */
+a {
+    color: green;
+    text-decoration: none;
+}
+
+/* CSS Списки */
+ul {
+    list-style-type: none;
+}
+
+/* CSS Таблиці */
+table {
+    border-collapse: collapse;
+}
+
+/* CSS Розмір таблиці */
+.table-size-example {
+    width: 100%;
+}
+
+/* CSS Вирівнювання таблиці */
+.table-alignment-example th, .table-alignment-example td {
+    text-align: center;
+}
+
+/* CSS Стиль таблиці */
+.table-style-example {
+    border: 1px solid black;
+}
+
+/* CSS Адаптивна таблиця */
+@media only screen and (max-width: 600px) {
+    .table-responsive-example {
+        overflow-x: auto;
+    }
+}
+
+/* Заокруглені кути */
+.rounded-corners-example {
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    width: 200px;
+}
+
+/* CSS Анімації */
+@keyframes slide {
+    from {left: 0;}
+    to {left: 200px;}
+}
+.animation-example {
+    position: relative;
+    animation: slide 2s infinite alternate;
+}
+
+/* Підказки CSS */
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+/* Кнопки CSS */
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+/* CSS Пагінація */
+.pagination {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.pagination li {
+    display: inline;
+    margin-right: 5px;
+}
+
+.pagination li a {
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+}
+
+.pagination li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.pagination li a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+/* Створення стовпців CSS */
+.columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    flex-basis: 30%;
+    padding: 10px;
+}
+
+/* Випадаючі списки CSS */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Кольорові ключові слова CSS */
+.color-keywords-example {
+    background-color: tomato;
+    color: white;
+    padding: 20px;
+}
+
+
+/* CSS Box Shadow */
+.box-shadow-example {
+    width: 200px;
+    height: 100px;
+    background-color: #f0f0f0;
+    box-shadow: 10px 10px 5px grey;
+    margin: 20px;
+}
+
+/* Переходи CSS */
+.transition-example {
+    width: 200px;
+    height: 100px;
+    background-color: #f0f0f0;
+    transition: background-color 0.5s ease;
+    margin: 20px;
+}
+
+.transition-example:hover {
+    background-color: #ddd;
+}
+
+/* Текстові ефекти CSS */
+.text-effect-example {
+    font-size: 40px;
+    text-shadow: 2px 2px 5px #888888;
+}
+
+.table {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.row {
+    display: table-row;
+}
+
+.cell {
+    display: table-cell;
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+.cell.header {
+    font-weight: bold;
+    background-color: #f2f2f2;
+}
+
+/* Alternate row colors */
+.row:nth-child(even) {
+    background-color: #f9f9f9;
+}
